@@ -102,7 +102,7 @@ fig,ax1 = plt.subplots()
 color='tab:red'
 ax1.set_xlabel('Date')
 ax1.set_ylabel('@{name} Tweet Frequency'.format(name=screenName),color=color)
-ax1.plot(np.array(dates),np.array(values),color=color)
+ax1.bar(np.array(dates),np.array(values),color=color)
 ax2 = ax1.twinx()
 
 color = 'tab:blue'
